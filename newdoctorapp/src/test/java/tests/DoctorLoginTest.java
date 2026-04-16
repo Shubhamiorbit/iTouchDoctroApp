@@ -21,8 +21,8 @@ public class DoctorLoginTest extends BaseClassDoctor {
 	@Test(groups = {"login"})
 	
 	public void testValidLogin() {
-		String email= "Dr83778@iorbitteam813038.testinator.email";
-		String pass = "546678611";
+		String email= "Dr58401@iorbitteam813038.testinator.email";
+		String pass = "101608774";
 		//driver.executeScript("mobile: setOrientation", Map.of("orientation", "LANDSCAPE"));
 		try {
 			doctorloginPage.login(email, pass);

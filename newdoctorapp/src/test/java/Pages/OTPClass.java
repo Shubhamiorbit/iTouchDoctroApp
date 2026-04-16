@@ -19,7 +19,7 @@ public class OTPClass {
 
     //it will wait 20 seconds for getting the latest OTP
     public static String fetchLatestOTP() throws Exception {
-        String inboxName = "Dr83778";
+        String inboxName = "Dr58401";
         long latestSeenTime = 0;
         String otp = null;
 

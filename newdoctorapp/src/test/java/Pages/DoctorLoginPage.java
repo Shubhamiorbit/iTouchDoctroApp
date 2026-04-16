@@ -25,7 +25,7 @@ public class DoctorLoginPage extends BaseClassDoctor{
 	}
 	
 
-	@AndroidFindBy(accessibility="E-mail Address")
+	@AndroidFindBy(xpath="//android.view.ViewGroup[@content-desc=\"E-mail Address\"]")
 	public WebElement loginwithemailaddressbutton;
 	
 	@AndroidFindBy(uiAutomator="new UiSelector().text(\"Email Address\")")
@@ -37,7 +37,8 @@ public class DoctorLoginPage extends BaseClassDoctor{
 	@AndroidFindBy(accessibility="Get OTP")
 	public WebElement getotpbutton;
 	
-	public void login(String email, String pass) {
+	public void login(String email, String pass) throws InterruptedException {
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(loginwithemailaddressbutton));
 		loginwithemailaddressbutton.click();
 		

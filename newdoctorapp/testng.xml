@@ -5,6 +5,7 @@
     <classes>
       <class name="tests.DoctorLoginTest"/>
       <class name="tests.OTPTest"/>
+      <class name="tests.AddInstructionsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

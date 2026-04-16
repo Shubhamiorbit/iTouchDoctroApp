@@ -9,11 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">27,355</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">101,721</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.DoctorLoginTest</td><td><a href="#m0">testValidLogin</a></td><td rowspan="1">1775813441566</td><td rowspan="1">5799</td></tr><tr class="passedodd"><td rowspan="1">tests.OTPTest</td><td><a href="#m1">enterOTPTest</a></td><td rowspan="1">1775813447374</td><td rowspan="1">13201</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.DoctorLoginTest</td><td><a href="#m0">testValidLogin</a></td><td rowspan="1">1776166948992</td><td rowspan="1">27856</td></tr><tr class="failedodd"><td rowspan="1">tests.OTPTest</td><td><a href="#m1">enterOTPTest</a></td><td rowspan="1">1776166976863</td><td rowspan="1">26006</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">tests.DoctorLoginTest#testValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.OTPTest#enterOTPTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">tests.DoctorLoginTest#testValidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Exception occured: Expected condition failed: waiting for visibility of Located by By.chained({AppiumBy.androidUIAutomator: new UiSelector().text(&quot;Email Address&quot;)})
+(tried for 5 seconds with 500 milliseconds interval)
+	at tests.DoctorLoginTest.testValidLogin(DoctorLoginTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.OTPTest#enterOTPTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: No new OTP email arrived within 20 seconds.
+	at Pages.OTPClass.fetchLatestOTP(OTPClass.java:65)
+	at tests.OTPTest.enterOTPTest(OTPTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

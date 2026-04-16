@@ -29,10 +29,10 @@ public class BaseClassDoctor {
         extent = new ExtentReports();
         extent.attachReporter(spark);
         DeviceUtils deviceutils = new DeviceUtils();
-        File file = new File("D:\\newdoctorapp\\Apps\\NewDoctorAppv25.apk");
+        File file = new File("D:\\iTouchDoctorApp\\newdoctorapp\\Apps\\iTouch-DoctorApp-release.apk");
         System.out.println(file.exists());
 
-        File app1 = new File("D:\\newdoctorapp\\Apps\\NewDoctorAppv25.apk");
+        File app1 = new File("D:\\iTouchDoctorApp\\newdoctorapp\\Apps\\iTouch-DoctorApp-release.apk");
         
 
         UiAutomator2Options options = new UiAutomator2Options();
@@ -55,9 +55,10 @@ public class BaseClassDoctor {
         options.setUdid(udid);
         options.setPlatformVersion(platformVersion);
         options.setApp(app1.getAbsolutePath());
+       
        //options.setAppPackage("com.itouchtechadminapp");
        //options.setAppActivity("com.itouchtechadminapp.MainActivity");
-            // options.setAppPackage("com.itouchnurseapp");  
+       
         options.setAutoGrantPermissions(true);
         options.setNoReset(false); 
         options.setDisableWindowAnimation(true);
